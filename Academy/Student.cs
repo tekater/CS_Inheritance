@@ -67,10 +67,10 @@ namespace Academy
 		public override string ToString()
 		{
 			return base.ToString() + "\n" +
-				$"Специальность:\t{Speciality}" +
-				$"\nГруппа:\t\t{Group}" +
-				$"\nRating:\t\t{Rating}" +
-				$"\nAttendance:\t{Attendance}";
+				$"Специальность:\t{Speciality} ," +
+				$"\nГруппа:\t\t{Group} ," +
+				$"\nRating:\t\t{Rating} ," +
+				$"\nAttendance:\t{Attendance} ,";
 		}
 		public override void Print()
 		{
@@ -83,7 +83,14 @@ namespace Academy
 				$"\nAttendance:\t{Attendance}"
 				);
         }
-
+		public override void Init(string[] values)
+		{
+			base.Init(values);
+			Speciality = values[5];
+			Group = values[6];
+			Rating = Convert.ToDouble(values[7].Split(' ')[1]);
+			Attendance = Convert.ToDouble(values[8].Split(' ')[1]);
+		}
 
 	}
 }

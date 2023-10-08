@@ -37,10 +37,10 @@ namespace Academy
 
 		public override string ToString()
 		{
-			return $"Имя:\t\t{LastName}" +
-				$"\nФамилия:\t{FirstName}" +
-				$"\nПол:\t\t{Gender}" +
-				$"\nВозраст:\t{Age}";
+			return $"Имя:\t\t{LastName}," +
+				$"\nФамилия:\t{FirstName}," +
+				$"\nПол:\t\t{Gender}," +
+				$"\nВозраст:\t{Age},";
 		}
 		public virtual void Print()
 		{
@@ -49,6 +49,14 @@ namespace Academy
 			Console.WriteLine($"Last Name:\t{LastName}");
 			Console.WriteLine($"Gender:\t{Gender}");
 			Console.WriteLine($"Age:\t{Age}");
+		}
+
+		public virtual void Init(string[] values)
+		{
+			FirstName = values[1];
+			LastName = values[2];
+			Gender = values[3];
+			Age = Convert.ToInt32(values[4].Split(' ')[1]);
 		}
 	}
 }

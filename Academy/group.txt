@@ -1,0 +1,29 @@
+Academy.Student:	Имя:		Kazama
+Фамилия:	Jin
+Пол:		male
+Возраст:	15
+Специальность:	fighter
+Группа:		S
+Rating:		90
+Attendance:	99;
+Academy.Teacher:	Имя:		Kazama
+Фамилия:	Jun
+Пол:		female
+Возраст:	22
+Специальность:	fighter
+Опыт:		8;
+Academy.Graduate:	Имя:		Kazama
+Фамилия:	Jin
+Пол:		male
+Возраст:	15
+Специальность:	fighter
+Группа:		S
+Rating:		90
+Attendance:	99
+Subject:	How to kill dad;
+Academy.Teacher:	Имя:		Ricardo
+Фамилия:	Diaz
+Пол:		male
+Возраст:	30
+Специальность:	Thief
+Опыт:		20;

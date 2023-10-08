@@ -45,8 +45,8 @@ namespace Academy
 		public override string ToString()
 		{
 			return base.ToString() + "\n" +
-				$"Специальность:\t{Speciality}" +
-				$"\nОпыт:\t\t{Experience}";
+				$"Специальность:\t{Speciality}," +
+				$"\nОпыт:\t\t{Experience},";
 		}
 		public override void Print()
 		{
@@ -56,6 +56,13 @@ namespace Academy
 				$"Специальность:\t{Speciality}" +
 				$"\nОпыт:\t\t{Experience}"
 			);
+		}
+
+		public override void Init(string[] values)
+		{
+			base.Init(values);
+			Speciality = values[9];
+			Experience = Convert.ToInt32(values[10].Split(' ')[1]);
 		}
 	}
 }

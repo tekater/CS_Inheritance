@@ -43,12 +43,18 @@ namespace Academy
 		public override string ToString()
 		{
 			return base.ToString() + "\n" +
-				$"Subject:\t{Subject}";
+				$"Subject:\t{Subject},";
 		}
 		public override void Print()
 		{
 			base.Print();
             Console.WriteLine($"Subject:\t{Subject}");
         }
+
+		public override void Init(string[] values)
+		{
+			base.Init(values);
+			Subject = values[11];
+		}
 	}
 }

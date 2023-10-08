@@ -5,6 +5,8 @@ VisualStudioVersion = 17.5.33414.496
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Academy", "Academy\Academy.csproj", "{F8E5486B-110F-4022-B9DF-75B166CFD306}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Geom", "Geom\Geom.csproj", "{7576B758-2E6D-4AE7-BC2A-9DEEAD5FBBF4}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{F8E5486B-110F-4022-B9DF-75B166CFD306}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F8E5486B-110F-4022-B9DF-75B166CFD306}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F8E5486B-110F-4022-B9DF-75B166CFD306}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7576B758-2E6D-4AE7-BC2A-9DEEAD5FBBF4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7576B758-2E6D-4AE7-BC2A-9DEEAD5FBBF4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7576B758-2E6D-4AE7-BC2A-9DEEAD5FBBF4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7576B758-2E6D-4AE7-BC2A-9DEEAD5FBBF4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
