@@ -1,5 +1,5 @@
 ﻿//#define WRITE_TO_FILE
-//#define READ_FROM_FILE
+#define READ_FROM_FILE
 using System;
 using System.Collections.Generic;
 using System.Diagnostics;
@@ -40,40 +40,41 @@ namespace Academy
 
 			*/
 			Human human = new Human("Jin", "Kazama", "male", 15);
-			Console.WriteLine($"\n{human}");
+			//Console.WriteLine($"\n{human}");
 
 
-			Console.WriteLine($"{delimeter}");
+			//Console.WriteLine($"{delimeter}");
 
 
 
 			Student student = new Student(human, "fighter", "S", 90, 99);
-			Console.WriteLine($"\n{student}\n");
+			//Console.WriteLine($"\n{student}\n");
 
-			Console.WriteLine($"{delimeter}");
+			//Console.WriteLine($"{delimeter}");
 
 
 
 			Human Thuman = new Human("Jun", "Kazama", "female", 22);
 
 			Teacher teacher = new Teacher(Thuman, "fighter", 8);
-			Console.WriteLine($"\n{teacher}\n");
+			//Console.WriteLine($"\n{teacher}\n");
 
-			Console.WriteLine($"{delimeter}");
+			//Console.WriteLine($"{delimeter}");
 
 
 
 			Graduate graduate = new Graduate(human, student, "How to kill dad");
-			Console.WriteLine($"\n{graduate}\n");
+			//Console.WriteLine($"\n{graduate}\n");
 
 
-			Console.WriteLine(delimeter);
-			Console.WriteLine("\n");
-			Console.WriteLine(delimeter);
+			//Console.WriteLine(delimeter);
+			//Console.WriteLine("\n");
+			//Console.WriteLine(delimeter);
 
 			Human[] group = new Human[] { student, teacher, graduate,
 				new Teacher("Diaz", "Ricardo", "male", 30, "Thief", 20)
 			};
+			/*
 			for (int i = 0; i < group.Length; i++)
 			{
 				Console.WriteLine(group[i]);
@@ -91,7 +92,7 @@ namespace Academy
 			Console.WriteLine(delimeter);
 			Console.WriteLine("\n");
 			Console.WriteLine(delimeter);
-
+			*/
 			//. - ссылка на текущий каталог
 			//.. - ссылка на родительский каталог
 
@@ -130,10 +131,10 @@ namespace Academy
 			System.Diagnostics.Process.Start("notepad", cmd);
 
 
-			save(group, "group2.txt");
+			save(group, "group.txt");
 #endif
 			Human[] groupt = Load("group.txt");
-			for (int i = 0; i < group.Length; i++)
+			for (int i = 0; i < groupt.Length; i++)
 			{
                 Console.WriteLine();
             }
@@ -160,12 +161,13 @@ namespace Academy
 
 		static Human[] Load(string filename)
 		{
+			Directory.SetCurrentDirectory("..\\..");
 			List<Human> group = new List<Human>();
 			StreamReader sr = new StreamReader(filename);
 			while (!sr.EndOfStream)
 			{
 				string buffer = sr.ReadLine();
-				string[] values = buffer.Split(';', ',');
+				string[] values = buffer.Split(';', ',',';','\n');
 				group.Add(HumanFactory(values[0]));
 			}
 			sr.Close();

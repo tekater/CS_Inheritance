@@ -54,7 +54,7 @@ namespace Academy
 		public override void Init(string[] values)
 		{
 			base.Init(values);
-			Subject = values[11];
+			Subject = values[11].TrimStart().TrimEnd();
 		}
 	}
 }

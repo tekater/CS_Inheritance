@@ -53,9 +53,9 @@ namespace Academy
 
 		public virtual void Init(string[] values)
 		{
-			FirstName = values[1];
-			LastName = values[2];
-			Gender = values[3];
+			FirstName = values[1].TrimStart().TrimEnd();
+			LastName = values[2].TrimStart().TrimEnd();
+			Gender = values[3].TrimStart().TrimEnd();
 			Age = Convert.ToInt32(values[4].Split(' ')[1]);
 		}
 	}

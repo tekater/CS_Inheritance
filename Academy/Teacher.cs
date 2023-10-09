@@ -61,7 +61,7 @@ namespace Academy
 		public override void Init(string[] values)
 		{
 			base.Init(values);
-			Speciality = values[9];
+			Speciality = values[9].TrimStart().TrimEnd();
 			Experience = Convert.ToInt32(values[10].Split(' ')[1]);
 		}
 	}
