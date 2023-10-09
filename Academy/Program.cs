@@ -1,5 +1,5 @@
 ﻿//#define WRITE_TO_FILE
-#define READ_FROM_FILE
+//#define READ_FROM_FILE
 using System;
 using System.Collections.Generic;
 using System.Diagnostics;
