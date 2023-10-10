@@ -74,8 +74,8 @@ namespace AbstractGeometry
 			e.Graphics.DrawPolygon(pen,
 				new PointF[]
 				{
-					new PointF((float)SideA + 10, (float)SideB - 20),
-					new PointF((float)SideA + 40, (float) SideB + 10),
+					new PointF((float)SideA -20, (float)SideB +10),
+					new PointF((float)SideA -10, (float) SideB - 40),
 					new PointF((float)SideA + 70, (float) SideB - 20)
 				});
 		}

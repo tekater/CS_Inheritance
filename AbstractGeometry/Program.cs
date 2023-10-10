@@ -26,10 +26,12 @@ namespace AbstractGeometry
 			int action;
 			do
 			{
-                Console.WriteLine
+				Console.WriteLine
 					(
-					$"[1] - Rectangle\n"+
-					$"[2] - Square\n"
+					$"[1] - Rectangle\n" +
+					$"[2] - Square\n" +
+					$"[3] - Triangle\n" +
+					$"[4] - Circle\n"
 					);
                 action = Convert.ToInt32(Console.ReadLine());
 
@@ -50,8 +52,15 @@ namespace AbstractGeometry
 						Triangle triangle = new Triangle(200, 150, 200, 200, 5, Color.Green);
 						triangle.Info(e);
 						break;
-					default:
+					case 4:
+						Console.Clear();
+						Circle circle = new Circle(25,200,200,5,Color.Green);
+						circle.Info(e);
 						break;
+					default:
+						action = 9;
+                        Console.WriteLine("Exit :D\n");
+                        break;
 				}
 			} while (action != 9);
 
