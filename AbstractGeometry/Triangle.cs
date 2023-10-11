@@ -10,7 +10,7 @@ using System.Windows.Forms;
 namespace AbstractGeometry
 {
 	internal class Triangle:Shape
-	{
+	{ 
 		double side_a;
 		double side_b;
 		public double SideA

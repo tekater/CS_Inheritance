@@ -41,6 +41,7 @@ namespace AbstractGeometry
 						Console.Clear();
 						Rectangle rect = new Rectangle(200, 150, 200, 200, 5, Color.Green);
 						rect.Info(e);
+						
 						break;
 					case 2:
 						Console.Clear();
