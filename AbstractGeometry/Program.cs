@@ -34,7 +34,7 @@ namespace AbstractGeometry
 					$"[4] - Circle\n"
 					);
                 action = Convert.ToInt32(Console.ReadLine());
-
+				
 				switch (action)
 				{
 					case 1:
