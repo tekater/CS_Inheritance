@@ -72,12 +72,26 @@ namespace AbstractGeometry
 			Pen pen = new Pen(Color, LineWidth);
 
 			e.Graphics.DrawPolygon(pen,
-				new PointF[]
+				/*new PointF[]
 				{
 					new PointF((float)SideA -20, (float)SideB +10),
 					new PointF((float)SideA -10, (float) SideB - 40),
 					new PointF((float)SideA + 70, (float) SideB - 20)
-				});
+				}*/
+				/*new Point[]
+				{ 
+					new Point(StartX, StartY),
+					new Point(StartX, StartY + (int)SideB),
+					new Point((int)(StartX+SideA), StartX)
+				}*/
+				new Point[]
+				{ 
+					new Point(StartX, (int)(StartY + SideB)),
+					new Point((int)(StartX+SideA), StartY + (int)SideB),
+					new Point((StartX), StartY)
+				}
+
+				);
 		}
 	}
 }
